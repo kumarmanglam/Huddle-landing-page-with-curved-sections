@@ -200,10 +200,10 @@ html{
   justify-content: center;
   align-items: center;
   row-gap: 3rem;
-  background-image: url(./images/bg-section-bottom-desktop-1.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
+  background-image: url(./images/bg-section-bottom-desktop-1.svg), url(./images/bg-footer-top-mobile.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-size: 100%,100%;
+  background-position: top,bottom;
 }
 
 .build-title::selection{
@@ -298,6 +298,15 @@ footer>*{
 }
 
 @media screen  and (max-width: 980px){
+  .header{
+    padding: 3rem;
+  }
+  .header-logo-section{
+    padding: 0;
+  }
+  .try-it-free {
+    padding: 10px;
+  }
   .social-footprint {
     grid-template-columns: 1fr;
   }
@@ -312,13 +321,22 @@ footer>*{
     flex-direction: column;
     align-items: center;
   }
+  .content-body{
+    width: 100%;
+  }
   .flow-content {
     padding-left: 0;
+  }
+  .build-title{
+    text-align: center;
   }
   footer{
     grid-template-columns: 1fr;
     gap: 6rem;
     padding: 3rem 1rem;
+  }
+  .takeaway{
+    padding: 4rem 2rem;
   }
   .newsletter{
     padding-top: 10rem;
@@ -329,13 +347,5 @@ footer>*{
   }
   .subscribe{
     width: 15rem;
-  }
-}
-
-@media screen and (max-width: 550px){
-  .header-logo-section{
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
   }
 }
