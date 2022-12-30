@@ -194,7 +194,7 @@ html{
 }
 
 .build-community {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,7 +202,7 @@ html{
   row-gap: 3rem;
   background-image: url(./images/bg-section-bottom-desktop-1.svg), url(./images/bg-footer-top-mobile.svg);
   background-repeat: no-repeat,no-repeat;
-  background-size: 100%,100%;
+  background-size: 100%,110%;
   background-position: top,bottom;
 }
 
@@ -265,7 +265,7 @@ footer>*{
 }
 
 .newsletter-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-style: var(--font-body);
   line-height: 1.5;
 }
@@ -334,6 +334,9 @@ footer>*{
     grid-template-columns: 1fr;
     gap: 6rem;
     padding: 3rem 1rem;
+  }
+  .stat-number{
+    font-size: 6rem;
   }
   .takeaway{
     padding: 4rem 2rem;
