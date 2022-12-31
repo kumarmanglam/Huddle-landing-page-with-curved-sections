@@ -295,6 +295,9 @@ footer>*{
   border-radius: 5px;
   background-color: var(--page-theme);
   color: var(--bg-secondary);
+  border: none;
+  box-shadow: 1px 3px 10px #1f0f0f;
+  
 }
 
 @media screen  and (max-width: 980px){
@@ -350,5 +353,14 @@ footer>*{
   }
   .subscribe{
     width: 15rem;
+  }
+}
+
+@media screen  and (max-width: 450px){
+  .company-logo img{
+    width: 16rem;
+  }
+  .try-it-free{
+    padding: 3px 10px;
   }
 }
